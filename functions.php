@@ -34,27 +34,27 @@ add_action('admin_menu', 'addAdminMenu');
 function addAdminMenu(){
 
     $themeMenuPage = add_theme_page(
-        __('Sub theme Step By Step', MY_THEME_TEXTDOMAIN),
-        __('Sub theme Step By Step', MY_THEME_TEXTDOMAIN),
+        __('Sub theme 20-15', MY_THEME_TEXTDOMAIN),
+        __('Sub theme 20-15', MY_THEME_TEXTDOMAIN),
         'read',
-        'twentyseventeen_child_control_sub_theme_menu',
+        '20-15_child_control_sub_theme_menu',
         'renderThemeMenu'
     );
 }
 function renderThemeMenu(){
-    _e('Sub theme Step By Step', MY_THEME_TEXTDOMAIN);
+    _e('Sub theme 20-15', MY_THEME_TEXTDOMAIN);
 }
 
 
-add_shortcode( 'twentyseventeen_child_guest_book', 'guestBookShortcode');
+add_shortcode( '20-15_child_guest_book', 'guestBookShortcode');
 function guestBookShortcode(){
     $output = '';
     $output .= '<form  method="post">
                     <label>'.__('User name', MY_THEME_TEXTDOMAIN ).'</label>
-                    <input type="text" name="twentyseventeen_child_" class="twentyseventeen-child-name">
+                    <input type="text" name="20-15_child_" class="20-15-child-name">
                     <label>'.__('Message', MY_THEME_TEXTDOMAIN ).'</label>
-                    <textarea name="twentyseventeen_child_message" class="twentyseventeen-child-message"></textarea>
-                    <button class="twentyseventeen-child-btn-add" >'.__('Add', MY_THEME_TEXTDOMAIN ).'</button>                   
+                    <textarea name="20-15_child_message" class="20-15-child-message"></textarea>
+                    <button class="20-15-child-btn-add" >'.__('Add', MY_THEME_TEXTDOMAIN ).'</button>                   
                 </form>';
     return $output;
 }
@@ -71,7 +71,7 @@ add_action('admin_enqueue_scripts', 'loadScriptAdmin');
 function loadScriptAdmin($hook){
     wp_enqueue_script(
         'twentyseventeen_child_admin_main', //$handle
-        get_stylesheet_directory_uri() .'/assets/js/twentyseventeen-child-admin-main.js', //$src
+        get_stylesheet_directory_uri() .'/assets/js/20-15-child-admin-main.js', //$src
         array(
             'jquery',
         )

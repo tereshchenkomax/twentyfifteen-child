@@ -4,7 +4,7 @@ jQuery(function($) {
     });
 
     $(document).find('#guestBookShortcodeButton').click(function (e) {
-        insertShortcode('[twentyseventeen_child_guest_book]');
+        insertShortcode('[20-15_child_guest_book]');
     });
 
     function insertShortcode(shortcodes){
