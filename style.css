@@ -1,0 +1,14 @@
+/*
+Theme Name: Twenty Fifteen Child
+Theme URI:
+Description: Child Theme Twenty Seventeen
+Author: SolomashenkoRoman
+Author URI:
+Template: twentyfifteen
+Version: 1.0
+Text Domain: twentyfifteen-child
+Domain Path: /languages/
+*/
+
+/* импортируем стили родительской темы Twenty Seventeen */
+/*@import url("../twentyseventeen/style.css");*/
